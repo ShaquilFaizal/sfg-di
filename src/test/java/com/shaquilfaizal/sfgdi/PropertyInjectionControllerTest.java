@@ -5,7 +5,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import com.shaquilfaizal.sfgdi.controller.PropertyInjectionController;
-import com.shaquilfaizal.sfgdi.services.GreetingServiceImpl;
+import com.shaquilfaizal.sfgdi.services.ConstructorGreetingService;
 
 class PropertyInjectionControllerTest {
 
@@ -15,7 +15,7 @@ class PropertyInjectionControllerTest {
 	void setUp() {
 		controller = new PropertyInjectionController();
 		
-		controller.greetingService = new GreetingServiceImpl(); 
+		controller.greetingService = new ConstructorGreetingService(); 
 			
 	}
 	
