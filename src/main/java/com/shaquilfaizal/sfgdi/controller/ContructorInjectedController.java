@@ -11,7 +11,7 @@ public class ContructorInjectedController {
 	//@Autowired not needed in constructor injection
 	private final GreetingService greetingService;
 
-	//@Qualifer("the bean name")
+	//@Qualifer("the bean name") if we don't use the qualifier this will call the @primary 
 	public ContructorInjectedController( @Qualifier("constructorGreetingService") GreetingService greetingService) {
 		this.greetingService = greetingService;
 	}
